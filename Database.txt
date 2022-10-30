@@ -1,0 +1,23 @@
+create database ITS
+default character set utf8
+default collate utf8_general_ci;
+
+
+create table Alunos(
+id int not null auto_increment,
+Nome varchar(30) not null,
+Pai varchar(30) not null,
+Mae varchar(30) not null,
+BI varchar(14) unique not null,
+Email varchar(60),
+Nascimento date,
+Tel int (9) not null,
+Natural_de varchar(20),
+Sexo enum('Masculino', 'Femenino'),
+Nivel varchar(12),
+Ano int(4),
+Cursos varchar(20),
+Horario varchar(15),
+primary key(id)
+
+)default charset= utf8;
